@@ -11,7 +11,7 @@ class Bb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1c03653b4491c2d0b8962b644270802773fc37706530d96e85dae04a32549fc0"
+      sha256 "6622dbf5825c2f213f57cbcbef5b98ad9a5933b38a7a2d16df65c0f12aecfe60"
 
       define_method(:install) do
         bin.install "bb"
@@ -19,7 +19,7 @@ class Bb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a27d2ace5cf78f12cdb9722196b9a3aad32f9636b527dd1ca494312661baa583"
+      sha256 "c96957f6284a4224bde43f4f5386c8c3a32f6a86841dfb926fa1cb03af6eeb95"
 
       define_method(:install) do
         bin.install "bb"
@@ -30,14 +30,14 @@ class Bb < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_linux_amd64.tar.gz"
-      sha256 "0ae472c6e7aa37a0cf78666183cc10a43007b8f04d79114c58950f656b808ed3"
+      sha256 "9c562552f61e6ae813fa87a03b640dc11f9b4c8fe520735b89cd826272f180b3"
       define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_linux_arm64.tar.gz"
-      sha256 "f0150b433634c4b90c07c9d7c3d010ea8d1caf1d4140e9137a993fc16e79966d"
+      sha256 "ed0f2ee77935e9761299e20c259d0477ce2f7a8da0797691a1a6da45067129d9"
       define_method(:install) do
         bin.install "bb"
       end
