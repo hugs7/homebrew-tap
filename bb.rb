@@ -5,21 +5,21 @@
 class Bb < Formula
   desc "A comprehensive command-line interface for Bitbucket."
   homepage "https://github.com/hugs7/bitbucket-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5bf6996c3aca0ad429fb26d2374ed0851fcdda1f72d605837770bad0992a901d"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.2.0/bb_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1ce6fde6c47cfd811a30b2bed025efe7e4eec15da9d383cd8899f79af25a27f4"
 
       define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_darwin_arm64.tar.gz"
-      sha256 "cc14342d437d424bdc8f648e497a4ddc144d0c30d8b70f8d2a93d1a53d1bc440"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.2.0/bb_0.2.0_darwin_arm64.tar.gz"
+      sha256 "cf2ececdbe344f48d70ff93ed0f2c735e4a46334cb36023bcbdae72f69ae29b7"
 
       define_method(:install) do
         bin.install "bb"
@@ -29,15 +29,15 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_linux_amd64.tar.gz"
-      sha256 "e157ed1a8dfc5a14a8ec98f2c3a053d1442300ffee36015f76d84d327b2eb222"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.2.0/bb_0.2.0_linux_amd64.tar.gz"
+      sha256 "1160b1fc289a7ca72400159b4dde164211c944bea044b3f7ad540d6b41782cdc"
       define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.1.0/bb_0.1.0_linux_arm64.tar.gz"
-      sha256 "b9670f29bf17f2a4aeb5382ca1975c984967738399c0033c165b3c4d6a6384b5"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.2.0/bb_0.2.0_linux_arm64.tar.gz"
+      sha256 "772f150012716543c60968c6263e74c8c3f2e62dd9d18c4e5a80d5c8a805e91a"
       define_method(:install) do
         bin.install "bb"
       end
