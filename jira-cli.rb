@@ -5,21 +5,21 @@
 class JiraCli < Formula
   desc "A fast, comprehensive command-line interface and TUI for Jira."
   homepage "https://github.com/hugs7/jira-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugs7/jira-cli/releases/download/v0.2.0/jr_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e708156e5ca385e9e4af252f5cc022f7e17be55a622e97548123276c14301c0e"
+      url "https://github.com/hugs7/jira-cli/releases/download/v0.3.0/jr_0.3.0_darwin_amd64.tar.gz"
+      sha256 "977fb84712cb77d20d614e520c986e3379ef6ebb9e66a60f130d407ba4236b6f"
 
       define_method(:install) do
         bin.install "jr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugs7/jira-cli/releases/download/v0.2.0/jr_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6d4404867c7fa9c70adf47ee8191f80a21b799d9fd622aa58493ae1e6842c0ec"
+      url "https://github.com/hugs7/jira-cli/releases/download/v0.3.0/jr_0.3.0_darwin_arm64.tar.gz"
+      sha256 "c1b552bf44fbf3e603fd03c12f950461a3f33d84e0676a3ac20f99f7225d84da"
 
       define_method(:install) do
         bin.install "jr"
@@ -29,15 +29,15 @@ class JiraCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/jira-cli/releases/download/v0.2.0/jr_0.2.0_linux_amd64.tar.gz"
-      sha256 "a8dcd3ff1b69365ec041b6b39c863ce28d478a50fac111c9eb6500c0fb263f85"
+      url "https://github.com/hugs7/jira-cli/releases/download/v0.3.0/jr_0.3.0_linux_amd64.tar.gz"
+      sha256 "65c8c1e319da9f7550346b2874c3aedc11d1f4714dbd405f5ac7911a5d67b002"
       define_method(:install) do
         bin.install "jr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/jira-cli/releases/download/v0.2.0/jr_0.2.0_linux_arm64.tar.gz"
-      sha256 "e96605d7894723c70e6e5756ecd709fd06c90734a14f694a319e961e712f43a6"
+      url "https://github.com/hugs7/jira-cli/releases/download/v0.3.0/jr_0.3.0_linux_arm64.tar.gz"
+      sha256 "9b42442a3b57776bcaf9db517e6ddbfab58ff5d0af95432a6a4fc4c5d4b16301"
       define_method(:install) do
         bin.install "jr"
       end
