@@ -5,13 +5,13 @@
 class BitbucketCli < Formula
   desc "A comprehensive command-line interface for Bitbucket."
   homepage "https://github.com/hugs7/bitbucket-cli"
-  version "0.10.1"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.10.1/bb_0.10.1_darwin_amd64.tar.gz"
-      sha256 "621e65216b539dd9ef1030655715d1265bc52abd17808d515f2cae20c8dbb7e2"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.11.0/bb_0.11.0_darwin_amd64.tar.gz"
+      sha256 "4fc7aabfa0a12c330a578544f8e5779b5b349fceacf87fbac5e9953b809dc391"
 
       define_method(:install) do
         bin.install "bb"
@@ -21,8 +21,8 @@ class BitbucketCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.10.1/bb_0.10.1_darwin_arm64.tar.gz"
-      sha256 "915a5f77e3766012a2ba68be62c9904dc3d10551a805e93c2abeda0102a4bcf8"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.11.0/bb_0.11.0_darwin_arm64.tar.gz"
+      sha256 "d944ca959acd5540914d6f3fc57ae7e7436edfba814ab4d5da7e6e730ca9be14"
 
       define_method(:install) do
         bin.install "bb"
@@ -35,8 +35,8 @@ class BitbucketCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.10.1/bb_0.10.1_linux_amd64.tar.gz"
-      sha256 "45d2193fd7569ca86072c2aad38ef4cf11a5a7d093e1c39561bb3eef24e44a01"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.11.0/bb_0.11.0_linux_amd64.tar.gz"
+      sha256 "0f0fbc1aeeed6f05245592d990cb3f765930fc492c54dd9d094702b197ca6eb4"
       define_method(:install) do
         bin.install "bb"
         bash_completion.install "completions/bb.bash" => "bb"
@@ -45,8 +45,8 @@ class BitbucketCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.10.1/bb_0.10.1_linux_arm64.tar.gz"
-      sha256 "05129b6ab300478a57db9f66ca4642b7ffde216f37570bfb5a74d881e6425f18"
+      url "https://github.com/hugs7/bitbucket-cli/releases/download/v0.11.0/bb_0.11.0_linux_arm64.tar.gz"
+      sha256 "dc2f301fa74601d5a40960c8c55bab8fe36e2d7743cc6bb77450a3aaeae9051e"
       define_method(:install) do
         bin.install "bb"
         bash_completion.install "completions/bb.bash" => "bb"
